@@ -1,0 +1,13 @@
+N = int(input())
+M = int(input())
+
+j = N
+
+while(1):
+    
+    print("%02d:00" %(j))
+    j += 1
+    if (j == 24):
+        j = 0
+    if j == M+1:
+        break
