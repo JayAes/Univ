@@ -1,15 +1,15 @@
 N = int(input())
 M = int(input())
 
-j = N
+clock = N
 
 while(1):
+    print("%02d:00" %(clock))
     
-    print("%02d:00" %(j))
-    j += 1
-    
-    if j == M+1:
+    clock += 1
+    if clock == 25:
+        clock = 0
+        
+    if clock == M + 1:
         break
-    
-    if (j == 24):
-        j = 0
+
